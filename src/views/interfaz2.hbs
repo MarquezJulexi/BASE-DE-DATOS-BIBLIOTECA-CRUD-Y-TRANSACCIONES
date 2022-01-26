@@ -1,0 +1,41 @@
+<div class="container mt-5" style="width: 30%">
+    <div class="card mb-5">
+        <div class="card-header text-center">Registrar libro</div>
+        <div class="card-body">
+            <form action="/interfaz2.hbs" method="post" id="registro_libro">
+
+                            <h4 class="text-center">Ingreso de libros</h4>
+                            
+                            <div class="input-group mb-3">        
+                                <input name = "nombre_libro" id= "nombre_libro" type="text" class="form-control" placeholder="Ingrese el nombre del libro" required>
+                            </div>   
+                            <div class="input-group mb-3">              
+                                <input name="version" id="version" type="text" class="form-control" placeholder="Ingrese la versión del libro" required>
+                            </div>            
+                            <div class="input-group mb-3">                
+                                <input name="autor" id="autor" type="text" class="form-control" placeholder="Ingrese el autor del número" required>
+                            </div>                
+                            <div class="input-group mb-3">    
+                                <input name="isbn" id="isbn" type="text" class="form-control" placeholder="Ingrese el ISBN del libro" required>
+                            </div>                      
+                            <div class="input-group mb-3">                            
+                                <input name="editorial" id="editorial" type="text" class="form-control" placeholder="Ingrese la editorial del libro" required>
+                            </div>
+                            <div class="input-group mb-3">                                       
+                                <input name="num_ejemplares" id="num_ejemplares" type="text" class="form-control" placeholder="Ingrese el número de ejemplares" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input name="ver_digital" id="ver_digital" type="text" maxlength="2" class="form-control" placeholder="¿Contiene versión digital?" required>
+                            </div>
+                            <div class="text-center">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    Guardar registro
+                                </button>
+                            </div>
+            </form>
+        </div>
+    </div>
+</div>

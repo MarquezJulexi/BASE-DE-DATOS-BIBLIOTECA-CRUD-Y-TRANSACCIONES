@@ -1,0 +1,30 @@
+<div class="container mt-5" style="width: 30%">
+    <div class="card mb-5">
+        <div class="card-header text-center">Registrar cliente</div>
+        <div class="card-body">
+            <form action="/interfaz.hbs" method="post" id="registro-cliente">
+
+                <h4 class="text-center">CLIENTES</h4>
+                <br>
+                <div class="input-group mb-3">
+                    
+                    <br><br>
+                    <input class="form-control" placeholder="Ingrese el nombre del cliente" name = "cliente" id= "cliente" type="text" required>
+                </div>
+                <br><br>
+                <div class="input-group mb-3">
+                    
+                    <br><br>
+                    <input class="form-control" placeholder="Ingrese el nombre de cédula" name="ci_cliente" id="ci_cliente" type="text" required>
+                <br><br>
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                            class="btn btn-primary">
+                        Registrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

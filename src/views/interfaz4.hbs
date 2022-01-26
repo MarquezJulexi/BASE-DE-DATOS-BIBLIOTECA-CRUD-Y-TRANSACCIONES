@@ -1,0 +1,38 @@
+<div class="container mt-5" style="width: 30%">
+    <div class="card mb-5">
+        <div class="card-header text-center">Registrar prestamo devuelto</div>
+        <div class="card-body">
+            <form action="/interfaz4.hbs" method="post" id="caja-registro">
+                            <div class="input-group mb-3">
+                                <select name="cliente" id="cliente" class="form-select">
+                                    <option value="0" selected disabled>
+                                        Seleccione el cliente
+                                    </option>
+                                    {{#each cliente}}
+                                        <option value="{{ident}}">{{nombre}}
+                                            </option>
+                                    {{/each}}
+                                </select>
+                            </div>   
+                            <div class="input-group mb-3">
+                                <input name="penalizacion" id="penalizacion" type="text" class="form-control" placeholder="Valor de penalizacion" required>
+                            </div>                        
+                            <div class="input-group mb-3">      
+                                <input name="aspecto_entrega" id="aspecto_entrega" type="text" class="form-control" placeholder="Ingrese el aspecto del entrega" required>
+                            </div>            
+                            <div class="input-group mb-3">                    
+                                <input name="observaciones" id="observaciones" type="text" class="form-control" placeholder="Agregue alguna observación" required>
+                            </div>
+                                                        
+                            <div class="text-center">
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    Registrar
+                                </button>
+                            </div>
+            </form>
+        </div>
+    </div>
+</div>
