@@ -1,0 +1,2 @@
+# BASE-DE-DATOS-BIBLIOTECA-CRUD-Y-TRANSACCIONES
+BASE DE DATOS BIBLIOTECA CRUD Y TRANSACCIONES, interfaces y sentencias con conexión a postgresql
